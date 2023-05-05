@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:layout_gravity="center"
+        android:padding="8dp">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/logo" android:id="@+id/imageView"
+            android:contentDescription="logotipo cara ou coroa"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/buttonJogar" app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="JOGAR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" android:id="@+id/buttonJogar"
+            style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+            android:background="@color/white" android:textColor="#44F14C" tools:textSize="28sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" android:textAllCaps="true"
+            tools:fontFamily="@font/coming_soon"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="@+id/imageView" app:backgroundTint="@color/white"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
